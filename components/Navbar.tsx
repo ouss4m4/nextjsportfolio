@@ -37,13 +37,13 @@ const Navbar = (props: Props) => {
           activeItem={activeItem}
           setActiveItem={setactiveItem}
           name={'Resume'}
-          route={'resume'}
+          route={'/resume'}
         />
         <NavItem
           activeItem={activeItem}
           setActiveItem={setactiveItem}
           name={'Projects'}
-          route={'projects'}
+          route={'/projects'}
         />
         <NavItem
           activeItem={activeItem}
