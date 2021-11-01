@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import '../styles/globals.css';
 
@@ -8,7 +9,8 @@ function MyApp({ Component, pageProps }) {
       <div className="col-span-12 p-4 text-center bg-white lg:col-span-3 rounded-2xl">
         <Sidebar />
       </div>
-      <div className="col-span-12 bg-white lg:col-span-9 rounded-2xl">
+      <div className="flex flex-col col-span-12 bg-white lg:col-span-9 rounded-2xl">
+        <Navbar />
         <Component {...pageProps} />
       </div>
     </div>
