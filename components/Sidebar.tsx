@@ -6,6 +6,7 @@ import {
 } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';
+import Image from 'next/image';
 
 interface Props {}
 
@@ -16,10 +17,13 @@ const Sidebar = (props: Props) => {
   };
   return (
     <div>
-      <img
+      <Image
         src="https://raw.githubusercontent.com/ouss4m4/bzouss/master/content/assets/profile-pic600.png"
         alt="user avatar"
-        className="w-32 h-32 mx-auto rounded-full"
+        className="mx-auto rounded-full"
+        width="245"
+        height="245"
+        quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-green">Oussama </span>

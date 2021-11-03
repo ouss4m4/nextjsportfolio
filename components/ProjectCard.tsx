@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
 import { IProject } from '../types';
-
+import Image from 'next/image';
 const ProjectCard: FC<{ project: IProject }> = ({
   project: {
     name,
@@ -17,17 +17,37 @@ const ProjectCard: FC<{ project: IProject }> = ({
   const [showDetail, setShowDetail] = useState(false);
   return (
     <div>
-      <img
+      <Image
         src={image_path}
         alt={name}
         className="cursor-pointer"
         onClick={() => setShowDetail(true)}
+        width="300"
+        height="220"
+        layout="responsive"
+        quality="95"
       />
+      {/* <Image
+        src={image_path}
+        alt={name}
+        className="cursor-pointer"
+        onClick={() => setShowDetail(true)}
+      /> */}
       <p className="my-2 text-center">{name}</p>
       {showDetail && (
         <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-sm md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
           <div>
             <img src={image_path} alt={name} />
+
+            <Image
+              src={image_path}
+              alt={name}
+              width="300"
+              height="220"
+              layout="responsive"
+              quality="95"
+            />
+
             <div className="flex justify-center my-4 space-x-3">
               <a
                 href={github_url}
