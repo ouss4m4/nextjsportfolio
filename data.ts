@@ -1,7 +1,7 @@
 import { RiComputerLine } from 'react-icons/ri';
 import { BsCircleFill } from 'react-icons/bs';
 
-import { IService, ISkill } from './types';
+import { IProject, IService, ISkill } from './types';
 
 export const services: IService[] = [
   {
@@ -65,5 +65,18 @@ export const tools: ISkill[] = [
     name: 'React',
     level: '85%',
     Icon: BsCircleFill,
+  },
+];
+
+export const projects: IProject[] = [
+  {
+    name: 'Sales Order WebApp',
+    category: ['c#', 'react'],
+    deployed_url: 'https://salesorder-app.azurewebsites.net/',
+    github_url: 'https://github.com/ouss4m4/sales-order',
+    description:
+      'WebApp to create SalesOrders for clients. Built from scratch with Net Core and React. Deployed at Azure',
+    image_path: '/images/salesorder.png',
+    tags: ['C#', 'DotNet', 'React', 'TypeScript', 'Azure'],
   },
 ];

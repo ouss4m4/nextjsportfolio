@@ -1,4 +1,4 @@
-import React from 'react';
+import { useTheme } from 'next-themes';
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -10,6 +10,10 @@ import { GiTie } from 'react-icons/gi';
 interface Props {}
 
 const Sidebar = (props: Props) => {
+  const { theme, setTheme } = useTheme();
+  const changeTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
   return (
     <div>
       <img
@@ -21,11 +25,11 @@ const Sidebar = (props: Props) => {
         <span className="text-green">Oussama </span>
         Baaziz
       </h3>
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">
+      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark">
         Software Developer
       </p>
       <a
-        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full "
+        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 "
         href=""
         download="name"
       >
@@ -35,18 +39,18 @@ const Sidebar = (props: Props) => {
       {/* Social Buttons */}
       <div className="flex justify-around w-9/12 mx-auto my-5 md:w-full">
         <a href="">
-          <AiFillGithub className="w-8 h-8 cursor-pointer" />
+          <AiFillGithub className="w-8 h-8 cursor-pointer dark:text-white" />
         </a>
         <a href="">
-          <AiFillLinkedin className="w-8 h-8 text-blue-800 cursor-pointer" />
+          <AiFillLinkedin className="w-8 h-8 text-blue-800 cursor-pointer dark:text-white" />
         </a>
         <a href="">
-          <AiFillTwitterCircle className="w-8 h-8 text-blue-500 cursor-pointer" />
+          <AiFillTwitterCircle className="w-8 h-8 text-blue-500 cursor-pointer dark:text-white" />
         </a>
       </div>
       {/* Address */}
       <div
-        className="py-4 my-5 bg-gray-200"
+        className="py-4 my-5 bg-gray-200 dark:bg-dark-200"
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
         <div className="flex items-center justify-center space-x-2">
@@ -62,8 +66,11 @@ const Sidebar = (props: Props) => {
       >
         Email Me
       </button>
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400 ">
-        Dark Mode
+      <button
+        onClick={changeTheme}
+        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400 "
+      >
+        {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
       </button>
     </div>
   );
