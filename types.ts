@@ -22,4 +22,4 @@ export interface IProject {
   tags: string[];
 }
 
-export type ICategory = 'react' | 'node' | 'angular' | 'c#';
+export type ICategory = '.Net' | 'React' | 'Nodejs' | 'Desktop' | 'Mobile';

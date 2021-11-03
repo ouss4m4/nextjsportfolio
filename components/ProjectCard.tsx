@@ -31,16 +31,22 @@ const ProjectCard: FC<{ project: IProject }> = ({
             <div className="flex justify-center my-4 space-x-3">
               <a
                 href={github_url}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center px-4 py-2 space-x-3 bg-gray-200 dark:bg-dark-200"
               >
                 <AiFillGithub /> <span>Source Code</span>
               </a>
-              <a
-                href={github_url}
-                className="flex items-center px-4 py-2 space-x-3 bg-gray-200 dark:bg-dark-200"
-              >
-                <AiFillProject /> <span>Live</span>
-              </a>
+              {deployed_url && (
+                <a
+                  href={deployed_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center px-4 py-2 space-x-3 bg-gray-200 dark:bg-dark-200"
+                >
+                  <AiFillProject /> <span>Live</span>
+                </a>
+              )}
             </div>
           </div>
           <div>
