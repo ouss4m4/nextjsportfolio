@@ -20,6 +20,7 @@ export interface IProject {
   github_url: string;
   category: ICategory[];
   tags: string[];
+  id: number;
 }
 
 export type ICategory = '.Net' | 'React' | 'Nodejs' | 'Desktop' | 'Mobile';

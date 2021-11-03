@@ -23,7 +23,6 @@ const Sidebar = (props: Props) => {
         className="mx-auto rounded-full"
         width="245"
         height="245"
-        quality="100"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="text-green">Oussama </span>
@@ -34,11 +33,12 @@ const Sidebar = (props: Props) => {
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 "
-        href=""
-        download="name"
+        href="https://drive.google.com/file/d/1vwrJkVirI0vyYeEqVKRVfA4O9yhtVHFe/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
       >
         <GiTie className="w-6 h-6" />
-        Download Resume
+        Resume
       </a>
       {/* Social Buttons */}
       <div className="flex justify-around w-9/12 mx-auto my-5 md:w-full">
@@ -70,12 +70,12 @@ const Sidebar = (props: Props) => {
       >
         Email Me
       </button>
-      <button
+      {/* <button
         onClick={changeTheme}
         className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-400 "
       >
         {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-      </button>
+      </button> */}
     </div>
   );
 };

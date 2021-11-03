@@ -11,13 +11,33 @@ export const services: IService[] = [
     Icon: RiComputerLine,
   },
   {
-    title: 'Frontend Developer',
-    about: 'lorem ipsum dollor sit amet',
+    title: 'Backend Developer',
+    about: `lorem ip  softwares for the digital transformation of the company
+    Following enterprise standards and archite`,
     Icon: RiComputerLine,
   },
   {
-    title: 'Fullstack Developer',
-    about: 'lorem ipsum dollor sit amet',
+    title: 'Backend Developer',
+    about: `lorem ip  softwares for the digital transformation of the company
+    Following enterprise standards and archite`,
+    Icon: RiComputerLine,
+  },
+  {
+    title: 'Backend Developer',
+    about: `lorem ip  softwares for the digital transformation of the company
+    Following enterprise standards and archite`,
+    Icon: RiComputerLine,
+  },
+  {
+    title: 'Backend Developer',
+    about: `lorem ip  softwares for the digital transformation of the company
+    Following enterprise standards and archite`,
+    Icon: RiComputerLine,
+  },
+  {
+    title: 'Backend Developer',
+    about: `lorem ip  softwares for the digital transformation of the company
+    Following enterprise standards and archite`,
     Icon: RiComputerLine,
   },
 ];
@@ -78,6 +98,7 @@ export const projects: IProject[] = [
       'Domain-Driven Design with Clean Architecture Concepts API to create Clients Items and Orders. Architecture understanding is the GOAL of the api not the data',
     image_path: '/images/clean-architecture.jpg',
     tags: ['ExpressJs', 'Node', 'MongoDb', 'DDDesign'],
+    id: 1,
   },
   {
     name: 'MicroServices API',
@@ -88,6 +109,7 @@ export const projects: IProject[] = [
       'Microservice architecture built with .netcore 5 using rabbitmq as eventbus and docker-k8s for deployment',
     image_path: '/images/k8s-ms-arch.png',
     tags: ['Docker', 'Kubernetes', '.Net', 'RabbitMQ', 'gRPC', 'SQL'],
+    id: 2,
   },
   {
     name: 'Sales Order WebApp',
@@ -98,6 +120,7 @@ export const projects: IProject[] = [
       'WebApp to create SalesOrders for clients. Built from scratch with Net Core and React. Deployed at Azure',
     image_path: '/images/salesorder.png',
     tags: ['C#', 'DotNet', 'React', 'TypeScript', 'Azure'],
+    id: 3,
   },
   {
     name: 'Tournament Tracker',
@@ -108,6 +131,7 @@ export const projects: IProject[] = [
       'Desktop app built with WinForms on .NetCore to create players add them to teams, create tournaments using these teams and rewards, depending on number of starting teams,assign BYEs and rounds ',
     image_path: '/images/TournamentTracker.JPG',
     tags: ['.NetCore WinForms', 'Dapper', 'SqlServer'],
+    id: 4,
   },
   {
     name: 'SnapShot',
@@ -118,6 +142,7 @@ export const projects: IProject[] = [
       'Full Stack projects allows users to browse images. requires login to post and comment on other people photos. hosted on Heroku Free Tier slows the initial load',
     image_path: '/images/snapshot.JPG',
     tags: ['Heroku', 'React', 'MongoDb'],
+    id: 4,
   },
   {
     name: 'Shopping List',
@@ -128,6 +153,7 @@ export const projects: IProject[] = [
       'Flutter cross platform app to create a shopping list that contains the item name , quantity and add a photo if needed',
     image_path: '/images/shopping-list.png',
     tags: ['Flutter', 'Dart', 'Android', 'iOS'],
+    id: 5,
   },
   {
     name: 'Task Manager',
@@ -138,6 +164,7 @@ export const projects: IProject[] = [
       'Drag n Drop Task manager with persistance done in react deployed with Amazon Amplify',
     image_path: '/images/tasks-proj.png',
     tags: ['React', 'React-dnd', 'Amazon Amplify'],
+    id: 6,
   },
   {
     name: 'Reactive Programming',
@@ -148,6 +175,7 @@ export const projects: IProject[] = [
       'With the introduction of React hooks. working with rxjs subscriptions it now easily maintainable and the result is a smooth reactive UI/UX',
     image_path: '/images/rxjs-react.png',
     tags: ['React', 'RxJs', 'Amplify'],
+    id: 7,
   },
   {
     name: 'GraphQL and .Net Core',
@@ -157,5 +185,6 @@ export const projects: IProject[] = [
     description: '.NET API with GraphQL using ASP.HotChocolate and SqlServer',
     image_path: '/images/gql-dotnet.png',
     tags: ['.Net', 'GraphQl', 'ASP.HotChocolate', 'SqlServer'],
+    id: 8,
   },
 ];
