@@ -1,4 +1,4 @@
-import { IProject, ISkill } from './types';
+import { IProject, ISkill, ITool } from './types';
 
 export const projects: IProject[] = [
   {
@@ -112,11 +112,7 @@ export const skills: ISkill[] = [
     description:
       'Working on digitalization solutions means that non-technical clients define the needs. They trust me to make sensible and well-thought-out technical decisions.',
   },
-  {
-    name: 'Time Management',
-    description:
-      'My team uses JIRA® to Plan, track, and manage Software development. Creating sprints and releases. assigning tasks and delegating projects taught me the importance of time.',
-  },
+
   {
     name: 'Punctuality',
     description:
@@ -131,5 +127,107 @@ export const skills: ISkill[] = [
     name: 'E.Q',
     description:
       "Understanding one's own emotions. and using them in a positive way to relive stress. and communicate effectively to overcome challenges is a major factor for teamwork success.",
+  },
+  {
+    name: 'Time Management',
+    description:
+      'My team uses JIRA® to Plan, track, and manage Software development. Creating sprints and releases. assigning tasks and delegating projects taught me the importance of time.',
+  },
+];
+
+export const tools: ITool[] = [
+  {
+    name: 'TypeScript',
+    stack: ['Back-End', 'Front-End', 'Mobile', 'Desktop'],
+    image_path: '/images/ts-logo.svg',
+  },
+
+  {
+    name: 'Angular',
+    stack: ['Front-End', 'Mobile'],
+    image_path: '/images/angular-logo.svg',
+  },
+  {
+    name: 'ElectronJs',
+    stack: ['Desktop'],
+    image_path: '/images/electron-logo.svg',
+  },
+  {
+    name: 'FireBase',
+    stack: ['DevOps'],
+    image_path: '/images/firebase-logo.svg',
+  },
+  {
+    name: 'Flutter',
+    stack: ['Mobile'],
+    image_path: '/images/flutter-logo.svg',
+  },
+  {
+    name: 'Gatsby',
+    stack: ['Front-End'],
+    image_path: '/images/gatsby-logo.svg',
+  },
+  {
+    name: 'Git',
+    stack: ['DevOps'],
+    image_path: '/images/git-logo.svg',
+  },
+  {
+    name: 'MongoDb',
+    stack: ['Back-End'],
+    image_path: '/images/mongodb-logo.svg',
+  },
+  {
+    name: 'NativeScript',
+    stack: ['Mobile'],
+    image_path: '/images/nativescript-logo.svg',
+  },
+  {
+    name: 'Netlify',
+    stack: ['DevOps'],
+    image_path: '/images/netlify-logo.svg',
+  },
+  {
+    name: 'React',
+    stack: ['Front-End'],
+    image_path: '/images/react-logo.svg',
+  },
+  {
+    name: 'Webpack',
+    stack: ['DevOps'],
+    image_path: '/images/webpack-logo.svg',
+  },
+  {
+    name: 'C#',
+    stack: ['Back-End', 'Desktop'],
+    image_path: '/images/c--4.svg',
+  },
+  {
+    name: 'Jira',
+    stack: ['DevOps'],
+    image_path: '/images/jira-1.svg',
+  },
+  {
+    name: '.Net',
+    stack: ['Back-End'],
+    image_path: '/images/microsoft-net.svg',
+  },
+  {
+    name: 'ExpressJs',
+    stack: ['Back-End'],
+    image_path: '/images/express-logo.svg',
+    background: true,
+  },
+  {
+    name: 'AWS',
+    stack: ['DevOps'],
+    image_path: '/images/aws-logo.svg',
+    background: true,
+  },
+  {
+    name: 'NodeJs',
+    stack: ['Back-End', 'Desktop', 'Mobile'],
+    image_path: '/images/node-logo.svg',
+    background: true,
   },
 ];

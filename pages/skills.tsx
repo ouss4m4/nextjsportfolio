@@ -1,15 +1,17 @@
 import { motion } from 'framer-motion';
 import { FC } from 'react';
-import { routeAnimation } from '../animations';
+import { fadeInUp, routeAnimation, stagger } from '../animations';
 import { skills } from '../data';
 import { ISkill } from '../types';
 
 const Skill: FC<{ skill: ISkill }> = ({ skill: { name, description } }) => (
   <div>
-    <h3 className="mb-4 text-2xl font-bold text-center text-white font-headers">
+    <h3 className="mb-4 text-2xl font-bold text-center text-whitetxt font-headers">
       {name}
     </h3>
-    <p className="max-w-md text-center">{description}</p>
+    <p className="max-w-md text-center text-whitetxt font-lines">
+      {description}
+    </p>
   </div>
 );
 
@@ -22,11 +24,18 @@ const Skills = () => {
       animate="animate"
       exit="exit"
     >
-      <div className="grid lg:grid-cols-3 gap-9 gap-y-20">
+      <motion.div
+        className="grid lg:grid-cols-3 gap-9 gap-y-20"
+        variants={stagger}
+        initial="initial"
+        animate="animate"
+      >
         {skills.map((skill) => (
-          <Skill skill={skill} key={skill.name} />
+          <motion.div key={skill.name} variants={fadeInUp}>
+            <Skill skill={skill} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

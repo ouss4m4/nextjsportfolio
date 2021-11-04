@@ -28,6 +28,7 @@ const Navbar = (props: Props) => {
     if (pathname === '/projects') setactiveItem('Projects');
     // if (pathname === '/resume') setactiveItem('Resume');
     if (pathname === '/skills') setactiveItem('Skills');
+    if (pathname === '/tools') setactiveItem('Tools');
   }, []);
   return (
     <div className="flex justify-between px-5 py-3 my-3">
@@ -52,6 +53,12 @@ const Navbar = (props: Props) => {
           setActiveItem={setactiveItem}
           name={'Skills'}
           route={'/skills'}
+        />
+        <NavItem
+          activeItem={activeItem}
+          setActiveItem={setactiveItem}
+          name={'Tools'}
+          route={'/tools'}
         />
       </div>
     </div>
