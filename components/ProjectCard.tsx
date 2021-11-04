@@ -14,6 +14,7 @@ const ProjectCard: FC<{
         width="300"
         height="220"
         layout="responsive"
+        quality="100"
       />
 
       <p className="my-2 text-center">{name}</p>
