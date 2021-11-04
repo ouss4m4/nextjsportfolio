@@ -15,6 +15,7 @@ export default class MyDocument extends Document {
         <body className="bg-gradient-to-r from-green to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-gray-100">
           <Main />
           <NextScript />
+          <div id="modal-root"></div>
         </body>
       </Html>
     );
