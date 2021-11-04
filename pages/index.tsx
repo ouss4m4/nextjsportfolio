@@ -33,7 +33,7 @@ const index = () => {
             href="https://www.linkedin.com/company/pharmainvestspa"
             target="_blank"
             rel="noreferrer"
-            className="tracking-widest cursor-pointer text-green"
+            className="font-medium tracking-widest cursor-pointer text-green font-lines"
           >
             @PharmaInvest SPA
           </a>
@@ -80,17 +80,6 @@ const index = () => {
             </motion.li>
           </motion.ul>
         </div>
-        {/* <div className="grid gap-6 lg:grid-cols-2 ">
-          {services.map((s, i) => (
-            <motion.div
-              className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
-              key={i}
-              variants={fadeInUp}
-            >
-              <ServiceCard service={s} />
-            </motion.div>
-          ))}
-        </div> */}
       </motion.div>
     </motion.div>
   );

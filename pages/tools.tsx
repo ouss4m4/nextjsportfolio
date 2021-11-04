@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { fadeInUp, routeAnimation, stagger } from '../animations';
-import { tools } from '../data';
-import { ITool } from '../types';
+import { tools as ToolsData } from '../data';
+import { IStack, ITool } from '../types';
 import Image from 'next/image';
+import ToolsNavbar from '../components/ToolsNav';
+
 const Tool: FC<{ tool: ITool }> = ({
-  tool: { name, stack, image_path, background },
+  tool: { name, image_path, background },
 }) => {
   let className = 'flex items-center justify-center';
   if (background) className += ' bg-white p-2 rounded-md';
@@ -30,16 +32,37 @@ const Tool: FC<{ tool: ITool }> = ({
 };
 
 const Tools = () => {
+  const [tools, setTools] = useState(ToolsData);
+  const [active, setActive] = useState('All');
+
+  const handleFiltering = (stack: IStack | 'All') => {
+    if (stack === 'All') {
+      setTools([]);
+      setTimeout(() => {
+        setTools(ToolsData);
+      }, 1);
+      setActive(stack);
+      return;
+    }
+    const filtered = ToolsData.filter((tool) => tool.stack.includes(stack));
+    setTools([]);
+    setTimeout(() => {
+      setTools(filtered);
+    }, 1);
+    setActive(stack);
+  };
   return (
     <motion.div
-      className="flex items-center justify-center h-full px-6 py-2 "
+      className="px-6 py-2 "
       variants={routeAnimation}
       initial="initial"
       animate="animate"
       exit="exit"
     >
+      <ToolsNavbar handleFiltering={handleFiltering} active={active} />
+      {/* <ProjectsNavbar handleFiltering={handleFiltering} active={active} /> */}
       <motion.div
-        className="grid lg:grid-cols-6 gap-9 gap-y-20"
+        className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-9 gap-y-20"
         variants={stagger}
         initial="initial"
         animate="animate"
