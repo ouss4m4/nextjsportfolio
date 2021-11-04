@@ -43,7 +43,7 @@ const ProjectCard: FC<{
       /> */}
       <p className="my-2 text-center">{name}</p>
       {isActive && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 dark:text-whitetxt dark:bg-dark-700">
           <motion.div variants={stagger} initial="initial" animate="animate">
             <motion.div variants={fadeInUp}>
               <Image
@@ -66,7 +66,7 @@ const ProjectCard: FC<{
                 rel="noreferrer"
                 className="flex items-center px-4 py-2 space-x-3 bg-gray-200 dark:bg-dark-200"
               >
-                <AiFillGithub /> <span>Source Code</span>
+                <AiFillGithub /> <span>Github</span>
               </a>
               {deployed_url && (
                 <a
@@ -98,7 +98,7 @@ const ProjectCard: FC<{
               {tags.map((tag, i) => (
                 <span
                   key={i}
-                  className="px-2 py-1 my-1 bg-gray-200 rounded-sm dark:bg-dark-200"
+                  className="px-2 py-1 my-1 bg-gray-200 rounded-sm dark:bg-dark-200 tag-item"
                 >
                   {tag}
                 </span>

@@ -23,7 +23,7 @@ const Navbar = (props: Props) => {
   const [activeItem, setactiveItem] = useState<string>('');
   const { pathname } = useRouter();
   useEffect(() => {
-    if (pathname === '/') setactiveItem('About');
+    if (pathname === '/') setactiveItem('Experience');
     if (pathname === '/projects') setactiveItem('Projects');
     if (pathname === '/resume') setactiveItem('Resume');
   }, []);
@@ -48,7 +48,7 @@ const Navbar = (props: Props) => {
         <NavItem
           activeItem={activeItem}
           setActiveItem={setactiveItem}
-          name={'About'}
+          name={'Experience'}
           route={'/'}
         />
       </div>

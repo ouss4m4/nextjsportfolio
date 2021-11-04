@@ -18,3 +18,7 @@ body {
   width: 8px;
   height: 0px;
 }
+
+.tag-item::before {
+  content: '# ';
+}

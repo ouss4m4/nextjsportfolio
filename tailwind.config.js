@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     fontFamily: {
       kaushan: ['Kaushan Script', 'cursive'],
+      lines: ['Merriweather', 'Georgia', 'serif'],
+      headers: ['Montserrat', 'sans-serif'],
     },
     boxShadow: {
       'custom-light': '0 0 10px #313131',
@@ -19,9 +21,13 @@ module.exports = {
           100: '#0a0b0e',
           200: '#16181d',
           300: '#16181d',
-          500: '#0f1115',
+          500: '#282c35',
           700: '#202125',
         },
+        whitetxt: {
+          DEFAULT: 'rgba(255, 255, 255, 0.88)',
+        },
+        secondary: {},
       },
     },
   },
