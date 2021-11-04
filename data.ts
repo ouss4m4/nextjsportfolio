@@ -1,92 +1,4 @@
-import { RiComputerLine } from 'react-icons/ri';
-import { BsCircleFill } from 'react-icons/bs';
-
-import { IProject, IService, ISkill } from './types';
-
-export const services: IService[] = [
-  {
-    title: 'Backend Developer',
-    about: `lorem ip  softwares for the digital transformation of the company
-    Following enterprise standards and archite`,
-    Icon: RiComputerLine,
-  },
-  {
-    title: 'Backend Developer',
-    about: `lorem ip  softwares for the digital transformation of the company
-    Following enterprise standards and archite`,
-    Icon: RiComputerLine,
-  },
-  {
-    title: 'Backend Developer',
-    about: `lorem ip  softwares for the digital transformation of the company
-    Following enterprise standards and archite`,
-    Icon: RiComputerLine,
-  },
-  {
-    title: 'Backend Developer',
-    about: `lorem ip  softwares for the digital transformation of the company
-    Following enterprise standards and archite`,
-    Icon: RiComputerLine,
-  },
-  {
-    title: 'Backend Developer',
-    about: `lorem ip  softwares for the digital transformation of the company
-    Following enterprise standards and archite`,
-    Icon: RiComputerLine,
-  },
-  {
-    title: 'Backend Developer',
-    about: `lorem ip  softwares for the digital transformation of the company
-    Following enterprise standards and archite`,
-    Icon: RiComputerLine,
-  },
-];
-
-export const languages: ISkill[] = [
-  {
-    name: 'C',
-    level: '50%',
-    Icon: BsCircleFill,
-  },
-  {
-    name: 'TypeScript',
-    level: '65%',
-    Icon: BsCircleFill,
-  },
-  {
-    name: 'JavaSCript',
-    level: '85%',
-    Icon: BsCircleFill,
-  },
-];
-
-export const tools: ISkill[] = [
-  {
-    name: 'Vscode',
-    level: '85%',
-    Icon: BsCircleFill,
-  },
-  {
-    name: 'Electron',
-    level: '85%',
-    Icon: BsCircleFill,
-  },
-  {
-    name: 'NativeScript',
-    level: '85%',
-    Icon: BsCircleFill,
-  },
-  {
-    name: 'Angular',
-    level: '85%',
-    Icon: BsCircleFill,
-  },
-  {
-    name: 'React',
-    level: '85%',
-    Icon: BsCircleFill,
-  },
-];
+import { IProject, ISkill } from './types';
 
 export const projects: IProject[] = [
   {
@@ -186,5 +98,38 @@ export const projects: IProject[] = [
     image_path: '/images/gql-dotnet.png',
     tags: ['.Net', 'GraphQl', 'ASP.HotChocolate', 'SqlServer'],
     id: 8,
+  },
+];
+
+export const skills: ISkill[] = [
+  {
+    name: 'Communication',
+    description:
+      'Providing solutions to different departments and working with diverse teams requires a lot of meetings and reportings. this sharpened my communication skills.',
+  },
+  {
+    name: 'Critical Thinking',
+    description:
+      'Working on digitalization solutions means that non-technical clients define the needs. They trust me to make sensible and well-thought-out technical decisions.',
+  },
+  {
+    name: 'Time Management',
+    description:
+      'My team uses JIRA® to Plan, track, and manage Software development. Creating sprints and releases. assigning tasks and delegating projects taught me the importance of time.',
+  },
+  {
+    name: 'Punctuality',
+    description:
+      'Working in a field with constantly changing demands required all our applications to be easily updated and always respect the deadline.',
+  },
+  {
+    name: 'Teamwork',
+    description:
+      'Teamwork is vital. As a lead developer and a member on the Developers team.I have to collaborate effectively with teammates where communication is key.',
+  },
+  {
+    name: 'E.Q',
+    description:
+      "Understanding one's own emotions. and using them in a positive way to relive stress. and communicate effectively to overcome challenges is a major factor for teamwork success.",
   },
 ];

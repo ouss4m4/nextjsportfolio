@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { fadeInUp, routeAnimation, stagger } from '../animations';
-import ServiceCard from '../components/ServiceCard';
-import { services } from '../data';
 
 const index = () => {
   return (
@@ -22,7 +20,7 @@ const index = () => {
       <motion.div
         className="flex-grow p-4 bg-gray-400 dark:bg-dark-500"
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
-        variants={stagger}
+        variants={fadeInUp}
         initial="initial"
         animate="animate"
       >
@@ -40,39 +38,47 @@ const index = () => {
             @PharmaInvest SPA
           </a>
         </div>
-        <p className="max-w-2xl my-2 leading-relaxed tracking-wide text-center md:text-left md:max-w-4xl">
+        <p className="max-w-2xl my-2 mb-6 leading-relaxed tracking-wide text-center md:text-left md:max-w-4xl">
           My role as a member of the IT department and lead of the developers’
           team is to create, update and promote the use of digital solutions to
           entirely transform the processes of ordering and distribution. I
           participated and mentored in creating:
         </p>
         <div className="mt-2 leading-relaxed text-whitetxt">
-          <ul className="list-disc list-inside">
-            <li className="mb-6">
+          <motion.ul
+            className="list-disc list-inside"
+            variants={stagger}
+            initial="initial"
+            animate="animate"
+          >
+            <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
               <strong>P</strong>rogressive Web App for online inventory
               management, order fulfillment and customer complaints to be used
               by the company sales and marketing departments.
-            </li>
-            <li className="mb-6">
-              Automatic Order Printer built with Electron as a Desktop App to
-              print orders awaiting fulfillment in the corresponding warehouses.
-            </li>
-            <li className="mb-6">
-              Mobile App to scan and update each stage of Order fulfillment and
-              tracking of warehouses supply.
-            </li>
-            <li className="mb-6">
-              Automatic delivery/invoice printing using Barcode scanners.
-            </li>
-            <li className="mb-6">
-              A Public Cross Platform Mobile Application destined to final
-              clients for Ordering and Tracking shipments. and check invoices.
-            </li>
-            <li className="mb-6">
-              A Public Website in addition to the Mobile app connected together
-              to ensure services availability to the clients.
-            </li>
-          </ul>
+            </motion.li>
+            <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
+              <strong>A</strong>utomatic Order Printer built with Electron as a
+              Desktop App to print orders awaiting fulfillment in the
+              corresponding warehouses.
+            </motion.li>
+            <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
+              <strong>M</strong>obile App to scan and update each stage of Order
+              fulfillment and tracking of warehouses supply.
+            </motion.li>
+            <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
+              <strong>A</strong>utomatic delivery/invoice printing using Barcode
+              scanners.
+            </motion.li>
+            <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
+              <strong>A</strong> Public Cross Platform Mobile Application
+              destined to final clients for Ordering and Tracking shipments. and
+              check invoices.
+            </motion.li>
+            <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
+              <strong>A</strong> Public Website in addition to the Mobile app
+              connected together to ensure services availability to the clients.
+            </motion.li>
+          </motion.ul>
         </div>
         {/* <div className="grid gap-6 lg:grid-cols-2 ">
           {services.map((s, i) => (

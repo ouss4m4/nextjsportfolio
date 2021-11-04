@@ -28,11 +28,11 @@ const Sidebar = (props: Props) => {
         <span className="text-green">Oussama </span>
         Baaziz
       </h3>
-      <p className="px-2 py-1 my-3 text-lg bg-gray-200 rounded-full dark:bg-dark-200 font-headers">
+      <p className="px-2 py-1 my-3 text-lg font-bold bg-gray-200 rounded-full dark:bg-dark-200 font-headers">
         Software Developer
       </p>
       <a
-        className="flex items-center justify-center px-2 py-1 my-3 text-lg bg-gray-200 rounded-full dark:bg-dark-200 "
+        className="flex items-center justify-center px-2 py-1 my-3 text-lg font-bold bg-gray-200 rounded-full dark:bg-dark-200"
         href="https://drive.google.com/file/d/1vwrJkVirI0vyYeEqVKRVfA4O9yhtVHFe/view?usp=sharing"
         target="_blank"
         rel="noreferrer"

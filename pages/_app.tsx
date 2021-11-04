@@ -7,7 +7,7 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps, router }) {
   return (
-    <div className="grid h-screen grid-cols-12 gap-6 px-5 py-8 xl:px-48 lg:px-6 md:px-32 sm:px-20">
+    <div className="grid h-screen grid-cols-12 gap-6 px-5 py-8 xl:px-40 lg:px-6 md:px-32 sm:px-20">
       <div className="col-span-12 p-4 text-center bg-dark-500 lg:col-span-3 rounded-2xl shadow-custom-dark">
         <Sidebar />
       </div>
