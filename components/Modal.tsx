@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 
 const Modal = ({ show, onClose, children, title }) => {
@@ -14,7 +14,7 @@ const Modal = ({ show, onClose, children, title }) => {
   };
 
   const modalContent = show ? (
-    <div className="fixed top-0 left-0 flex items-center justify-center w-screen h-screen bg-dark-100">
+    <div className="fixed top-0 left-0 z-30 flex items-center justify-center w-screen h-screen bg-dark-100">
       <div
         className="p-4 rounded-xl bg-dark-500"
         style={{ width: '80vw', height: 'auto', maxWidth: '650px' }}

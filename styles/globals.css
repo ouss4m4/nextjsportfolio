@@ -11,14 +11,37 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to right bottom, #00ffff, #0575e6);
+  background: #16181d;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
   height: 0px;
+  background: #303432b5;
+  border-radius: 4px;
 }
 
 .tag-item::before {
   content: '# ';
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 90%,
+    rgba(40, 44, 53, 0.8) 95%,
+    rgba(40, 44, 53, 1) 100%
+  );
+}
+
+.second-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(40, 44, 53, 1) 0%,
+    rgba(40, 44, 53, 0.1) 5%,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }

@@ -6,10 +6,10 @@ import { ISkill } from '../types';
 
 const Skill: FC<{ skill: ISkill }> = ({ skill: { name, description } }) => (
   <div>
-    <h3 className="mb-4 text-2xl font-bold text-center text-whitetxt font-headers">
+    <h3 className="mb-4 text-2xl font-bold tracking-wide text-center text-white font-headers">
       {name}
     </h3>
-    <p className="max-w-md text-center text-whitetxt font-lines">
+    <p className="max-w-md text-center text-whitetxt font-lines ">
       {description}
     </p>
   </div>

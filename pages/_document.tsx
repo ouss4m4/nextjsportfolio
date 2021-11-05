@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="bg-dark-500 text-whitetxt">
+        <body className="overflow-x-hidden bg-dark-500 text-whitetxt">
           <Main />
           <NextScript />
           <div id="modal-root"></div>
