@@ -12,7 +12,10 @@ const NavItem: FC<{
   return activeItem !== name ? (
     <Link href={route} scroll={false}>
       <a>
-        <span onClick={() => setActiveItem(name)} className="hover:text-green">
+        <span
+          onClick={() => setActiveItem(name)}
+          className="text-white hover:text-green"
+        >
           {name}
         </span>
       </a>
