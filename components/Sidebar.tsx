@@ -1,4 +1,3 @@
-/* import { useTheme } from 'next-themes'; */
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -15,10 +14,6 @@ import React from 'react';
 interface Props {}
 
 const Sidebar = (props: Props) => {
-  /* const { theme, setTheme } = useTheme(); */
-  /* const changeTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  }; */
   return (
     <div className="text-whitetxt font-lines">
       <Image
@@ -37,7 +32,7 @@ const Sidebar = (props: Props) => {
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 text-lg font-medium rounded-full bg-dark-200"
-        href="https://drive.google.com/file/d/1vwrJkVirI0vyYeEqVKRVfA4O9yhtVHFe/view?usp=sharing"
+        href="https://drive.google.com/file/d/1Kh3v6JZvLPOftJAc1IUL4NiBg4G3gjw7/view"
         target="_blank"
         rel="noreferrer"
       >
