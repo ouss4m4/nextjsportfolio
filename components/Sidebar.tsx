@@ -1,29 +1,31 @@
+import Image from 'next/image';
+
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillTwitterCircle,
   AiOutlineWhatsApp,
 } from 'react-icons/ai';
-
+import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
 import { BsTelegram } from 'react-icons/bs';
-import { GiTie } from 'react-icons/gi';
-import Image from 'next/image';
-import React from 'react';
 
 interface Props {}
 
 const Sidebar = (props: Props) => {
   return (
-    <div className="text-whitetxt font-lines">
-      <Image
-        src="https://raw.githubusercontent.com/ouss4m4/bzouss/master/content/assets/profile-pic600.png"
-        alt="user avatar"
-        className="mx-auto rounded-full"
-        width="120"
-        height="120"
-      />
-      <h3 className="my-4 text-4xl font-medium tracking-wider font-kaushan">
+    <div className="w-full text-whitetxt font-lines">
+      <div className="relative flex items-center justify-center w-full h-56 md:hidden ">
+        <Image
+          src="/images/avatar.jpg"
+          alt="user avatar"
+          quality="100"
+          layout="fill"
+        />
+        <div className="absolute top-0 left-0 z-10 w-full h-full second-overlay"></div>
+        <div className="absolute top-0 left-0 z-10 w-full h-full hero-overlay"></div>
+      </div>
+      <h3 className="my-4 text-4xl font-medium tracking-wider font-kaushan md:py-10">
         <span className="text-green">Oussama </span>
         Baaziz
       </h3>
