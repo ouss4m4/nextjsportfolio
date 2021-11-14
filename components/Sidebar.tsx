@@ -34,7 +34,7 @@ const Sidebar = (props: Props) => {
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 text-lg font-medium rounded-full bg-dark-200"
-        href="https://drive.google.com/file/d/1Kh3v6JZvLPOftJAc1IUL4NiBg4G3gjw7/view"
+        href="https://drive.google.com/file/d/1uzQ5KZfsOw6u7q9iwO8Jnnyti4mwSaFA/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
