@@ -39,12 +39,11 @@ const index = () => {
           </a>
         </div>
         <p className="max-w-2xl my-2 mb-6 leading-relaxed tracking-wide text-center md:text-left md:max-w-4xl">
-          My role as a member of the IT department and lead of the developers’
-          team is to create, update and promote the use of digital solutions to
-          entirely transform the processes of ordering and distribution. I
-          participated and mentored in creating:
+          As the lead developer, it is my responsibility to plan, develop,
+          maintain, and promote the use of digital solutions to completely
+          transform the ordering and distribution processes.
         </p>
-        <div className="mt-2 leading-relaxed text-whitetxt">
+        <div className="mt-2 leading-relaxed text-whitetxt lg:text-justify">
           <motion.ul
             className="list-disc list-inside"
             variants={stagger}
@@ -52,31 +51,37 @@ const index = () => {
             animate="animate"
           >
             <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
-              <strong>P</strong>rogressive Web App for online inventory
-              management, order fulfillment and customer complaints to be used
-              by the company sales and marketing departments.
+              I Developed and published a
+              <strong>cross-platform mobile app</strong> that allows customers
+              to create purchase orders and monitor their progress. as well as
+              invoices and payment papers..
             </motion.li>
             <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
-              <strong>A</strong>utomatic Order Printer built with Electron as a
-              Desktop App to print orders awaiting fulfillment in the
-              corresponding warehouses.
+              To ensure a synchronized ordering experience from multiple
+              devices, I deployed a <strong>website</strong> connected to the
+              same <strong>API</strong> as the mobile <b>app</b> through{' '}
+              <b>web socket.</b>
             </motion.li>
             <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
-              <strong>M</strong>obile App to scan and update each stage of Order
-              fulfillment and tracking of warehouses supply.
+              We automated the invoicing and printing process by creating a
+              <strong> desktop software</strong> that connected to an API
+              developed on top of <strong>SAP B1 Service Layer.</strong>
             </motion.li>
             <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
-              <strong>A</strong>utomatic delivery/invoice printing using Barcode
-              scanners.
+              Instead of using the <strong>ERP Client App</strong>, Sales orders
+              are now created using a modern <strong>web app -PWA-</strong> with
+              a customized <strong>UX/UI</strong> designed to expedite the
+              ordering process.
             </motion.li>
             <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
-              <strong>A</strong> Public Cross Platform Mobile Application
-              destined to final clients for Ordering and Tracking shipments. and
-              check invoices.
+              We track orders from the point of creation and validation to
+              packaging and shipment using mobile apps with{' '}
+              <strong>QR scanners.</strong>
             </motion.li>
             <motion.li className="mb-6 tracking-wider" variants={fadeInUp}>
-              <strong>A</strong> Public Website in addition to the Mobile app
-              connected together to ensure services availability to the clients.
+              All repetitive procedures that were previously done manually are
+              now handled via autonomous APIs thanks to{' '}
+              <strong>Nodejs and Linux Cron.</strong>
             </motion.li>
           </motion.ul>
         </div>
