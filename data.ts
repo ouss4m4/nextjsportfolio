@@ -8,7 +8,7 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/ouss4m4/Task-tracker',
     description:
       'Drag n Drop Task manager with persistance done in react deployed with Amazon Amplify',
-    image_path: '/images/tasks-proj.png',
+    image_path: '/images/taskamanger.png',
     tags: ['React', 'React-dnd', 'Amazon Amplify'],
     id: 6,
   },
@@ -19,7 +19,7 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/ouss4m4/react-ts',
     description:
       'With the introduction of React hooks. working with rxjs subscriptions it now easily maintainable and the result is a smooth reactive UI/UX',
-    image_path: '/images/rxjs-react.png',
+    image_path: '/images/rxjs-react-typescript.png',
     tags: ['React', 'RxJs', 'Amplify'],
     id: 7,
   },
@@ -30,7 +30,7 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/ouss4m4/snapShot',
     description:
       'Full Stack projects allows users to browse images. requires login to post and comment on other people photos. hosted on Heroku Free Tier slows the initial load',
-    image_path: '/images/snapshot.JPG',
+    image_path: '/images/snapshot.png',
     tags: ['Heroku', 'React', 'MongoDb'],
     id: 4,
   },
