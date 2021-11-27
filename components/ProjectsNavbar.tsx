@@ -24,6 +24,7 @@ const ProjectsNavbar = (props) => {
       <NavItem value="Nodejs" {...props} />
       <NavItem value=".Net" {...props} />
       <NavItem value="React" {...props} />
+      <NavItem value="Angular" {...props} />
       <NavItem value="Desktop" {...props} />
     </div>
   );

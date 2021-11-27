@@ -2,6 +2,17 @@ import { IProject, ISkill, ITool } from './types';
 
 export const projects: IProject[] = [
   {
+    name: 'Angular .Net Store',
+    category: ['Angular', '.Net'],
+    deployed_url: null,
+    github_url: 'https://github.com/ouss4m4/NgNetStore',
+    description:
+      'eCommerce application built from scrach using .Net core 6 for the backend, Redis as db for shopping cart, SQLServer for MS.Identity and Databse, Stripe as a payment Method, Angular for the frontend ',
+    image_path: '/images/ngnetstore.png',
+    tags: ['Angular', '.Net', 'Redis', 'SqlServer', 'Stripe', 'Azure'],
+    id: 9,
+  },
+  {
     name: 'Task Manager',
     category: ['React'],
     deployed_url: 'https://master.d3e64dmv8w4bbk.amplifyapp.com/',

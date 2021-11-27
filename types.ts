@@ -21,5 +21,11 @@ export interface IProject {
   id: number;
 }
 
-export type ICategory = '.Net' | 'React' | 'Nodejs' | 'Desktop' | 'Mobile';
+export type ICategory =
+  | '.Net'
+  | 'React'
+  | 'Nodejs'
+  | 'Desktop'
+  | 'Mobile'
+  | 'Angular';
 export type IStack = 'Front-End' | 'Back-End' | 'Desktop' | 'Mobile' | 'DevOps';
