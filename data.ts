@@ -13,6 +13,17 @@ export const projects: IProject[] = [
     id: 9,
   },
   {
+    name: 'Sales Order WebApp',
+    category: ['.Net', 'React'],
+    deployed_url: 'https://salesorder-app.azurewebsites.net/',
+    github_url: 'https://github.com/ouss4m4/sales-order',
+    description:
+      'WebApp to create SalesOrders for clients. Built from scratch with Net Core and React. Deployed at Azure',
+    image_path: '/images/salesorder.png',
+    tags: ['C#', 'DotNet', 'React', 'TypeScript', 'Azure'],
+    id: 3,
+  },
+  {
     name: 'Task Manager',
     category: ['React'],
     deployed_url: 'https://master.d3e64dmv8w4bbk.amplifyapp.com/',
@@ -45,17 +56,7 @@ export const projects: IProject[] = [
     tags: ['Heroku', 'React', 'MongoDb'],
     id: 4,
   },
-  {
-    name: 'Sales Order WebApp',
-    category: ['.Net', 'React'],
-    deployed_url: 'https://salesorder-app.azurewebsites.net/',
-    github_url: 'https://github.com/ouss4m4/sales-order',
-    description:
-      'WebApp to create SalesOrders for clients. Built from scratch with Net Core and React. Deployed at Azure',
-    image_path: '/images/salesorder.png',
-    tags: ['C#', 'DotNet', 'React', 'TypeScript', 'Azure'],
-    id: 3,
-  },
+
   {
     name: 'Shopping List',
     category: ['Mobile'],
